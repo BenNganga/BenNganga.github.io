@@ -390,17 +390,23 @@ margin-bottom:10px;
 
 .section-title h2{
 
-font-size:45px;
+font-size:48px;
 
-margin-bottom:15px;
+font-weight:700;
+
+margin-bottom:18px;
 
 }
 
 .section-title p{
 
-color:#cbd5e1;
+font-size:19px;
 
-font-size:18px;
+max-width:700px;
+
+margin:auto;
+
+line-height:34px;
 
 }
 
@@ -1149,5 +1155,99 @@ padding:30px;
 text-align:center;
 
 color:#94a3b8;
+
+}
+/*==========================
+    PROJECT FILTER
+==========================*/
+
+.project-filter{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin-bottom:60px;
+
+}
+
+.filter-btn{
+
+padding:12px 25px;
+
+border:none;
+
+background:#1E293B;
+
+color:white;
+
+border-radius:30px;
+
+cursor:pointer;
+
+font-size:16px;
+
+transition:.3s;
+
+}
+
+.filter-btn:hover{
+
+background:var(--primary);
+
+}
+
+.filter-btn.active{
+
+background:var(--primary);
+
+}
+/*==========================
+        GITHUB STATS
+==========================*/
+
+.github-stats{
+
+display:flex;
+
+gap:30px;
+
+margin:30px 0;
+
+flex-wrap:wrap;
+
+}
+
+.stat{
+
+background:#1b3552;
+
+padding:20px;
+
+border-radius:15px;
+
+min-width:140px;
+
+text-align:center;
+
+}
+
+.stat h3{
+
+font-size:32px;
+
+margin-bottom:8px;
+
+color:var(--primary);
+
+}
+
+.stat span{
+
+color:#d1d5db;
 
 }

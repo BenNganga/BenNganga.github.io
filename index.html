@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Githua Ng'ang'a | Software Engineer</title>
-
+    <link rel="stylesheet" href="assets/css/theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 <body>
 
@@ -30,7 +31,7 @@
 </nav>
 
 
-<section class="hero">
+<section class="hero" data-aos="fade-up">
 
 <div class="hero-text">
 
@@ -73,7 +74,7 @@ Download CV
 </div>
 
 </section>
-<section id="about" class="about">
+<section id="about" class="about" data-aos="fade-right">
 
     <div class="about-image">
 
@@ -118,7 +119,7 @@ Download CV
     </div>
 
 </section>
-<section id="skills" class="skills">
+<section id="skills" class="skills" data-aos="fade-left">
 
     <div class="section-title">
         <h4>My Expertise</h4>
@@ -128,7 +129,7 @@ Download CV
 
     <div class="skills-grid">
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
             <h3>💻 Programming</h3>
             <ul>
                 <li>Python</li>
@@ -139,7 +140,7 @@ Download CV
             </ul>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
             <h3>🌐 Web Development</h3>
             <ul>
                 <li>HTML5</li>
@@ -150,7 +151,7 @@ Download CV
             </ul>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
             <h3>📊 Data Science</h3>
             <ul>
                 <li>Pandas</li>
@@ -170,7 +171,7 @@ Download CV
             </ul>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
             <h3>⚙ Tools</h3>
             <ul>
                 <li>Git</li>
@@ -181,7 +182,7 @@ Download CV
             </ul>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
             <h3>🔒 IT & Networking</h3>
             <ul>
                 <li>Windows Server</li>
@@ -195,17 +196,33 @@ Download CV
     </div>
 
 </section>
-<section id="projects" class="projects">
+<section id="projects" class="projects" data-aos="zoom-in">
 
     <div class="section-title">
         <h4>Portfolio</h4>
         <h2>Featured Projects</h2>
         <p>Software Engineering and Data Science projects showcasing my technical skills.</p>
     </div>
+    <div class="project-filter">
 
+    <button class="filter-btn active" data-filter="all">All</button>
+
+    <button class="filter-btn" data-filter="software">
+        Software Engineering
+    </button>
+
+    <button class="filter-btn" data-filter="datascience">
+        Data Science
+    </button>
+
+    <button class="filter-btn" data-filter="web">
+        Web Development
+    </button>
+
+</div>
     <div class="projects-grid">
 
-        <div class="project-card featured">
+        <div class="project-card featured software web" data-aos="zoom-in" data-aos-delay="100">
             <div class="project-image">
                 <img src="assets/images/projects/carpark.jpg" alt="Car Park Management System">
                 <span class="badge completed">Completed</span>
@@ -236,61 +253,194 @@ Download CV
             </div>
         </div>
 
-        <div class="project-card coming-soon">
-            <h3>Hospital Appointment System</h3>
-            <p>Coming Soon</p>
+        <div class="project-card software web" data-aos="zoom-in" data-aos-delay="200">
+            <h3>Hospital Appointment Management System</h3>
+
+<p>
+A web-based system that enables patients to book appointments,
+doctors to manage schedules, and administrators to oversee
+hospital operations efficiently.
+</p>
+
+<div class="tech-stack">
+    <span>PHP</span>
+    <span>MySQL</span>
+    <span>JavaScript</span>
+</div>
         </div>
 
-        <div class="project-card coming-soon">
+        <div class="project-card software web" data-aos="zoom-in" data-aos-delay="300">
             <h3>Employee Leave Management</h3>
-            <p>Coming Soon</p>
+            <div class="project-card software">
+
+    <div class="project-content">
+
+        <h3>Employee Leave Management System</h3>
+
+        <p>
+            A web-based leave management system that enables employees to
+            apply for leave, managers to review and approve requests, and
+            HR administrators to monitor leave balances, employee records,
+            and generate comprehensive leave reports.
+        </p>
+
+        <div class="tech-stack">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
         </div>
 
-        <div class="project-card coming-soon">
+        <div class="project-links">
+            <a href="#" class="github-btn">GitHub</a>
+            <a href="#" class="demo-btn">Live Demo</a>
+        </div>
+
+    </div>
+
+</div>
+        </div>
+
+        <div class="project-card datascience" data-aos="zoom-in" data-aos-delay="400">
             <h3>Sales Analytics Dashboard</h3>
-            <p>Coming Soon</p>
+            <div class="project-card datascience">
+
+    <div class="project-content">
+
+        <h3>Sales Analytics Dashboard</h3>
+
+        <p>
+            An interactive dashboard that visualizes sales performance,
+            revenue trends, customer behavior, and key business metrics
+            to support data-driven decision-making.
+        </p>
+
+        <div class="tech-stack">
+            <span>Python</span>
+            <span>Power BI</span>
+            <span>Pandas</span>
+            <span>SQL</span>
         </div>
 
-        <div class="project-card coming-soon">
+        <div class="project-links">
+            <a href="#" class="github-btn">GitHub</a>
+            <a href="#" class="demo-btn">Live Demo</a>
+        </div>
+
+    </div>
+
+</div>
+        </div>
+
+        <div class="project-card datascience" data-aos="zoom-in" data-aos-delay="500">
             <h3>House Price Prediction</h3>
-            <p>Coming Soon</p>
+
+<div class="project-card datascience">
+
+    <div class="project-content">
+
+        <h3>House Price Prediction</h3>
+
+        <p>
+            A machine learning application that predicts house prices
+            using property features such as location, size, bedrooms,
+            bathrooms, and market trends.
+        </p>
+
+        <div class="tech-stack">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+            <span>Matplotlib</span>
         </div>
 
-        <div class="project-card coming-soon">
+        <div class="project-links">
+            <a href="#" class="github-btn">GitHub</a>
+            <a href="#" class="demo-btn">Live Demo</a>
+        </div>
+
+    </div>
+
+</div>
+        </div>
+        <div class="project-card datascience" data-aos="zoom-in" data-aos-delay="600">
             <h3>Customer Churn Prediction</h3>
-            <p>Coming Soon</p>
+            <div class="project-card datascience">
+
+    <div class="project-content">
+
+        <h3>Customer Churn Prediction</h3>
+
+        <p>
+            A predictive analytics model that identifies customers
+            likely to discontinue a service, enabling businesses to
+            improve retention through data-driven strategies.
+        </p>
+
+        <div class="tech-stack">
+            <span>Python</span>
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+        </div>
+
+        <div class="project-links">
+            <a href="#" class="github-btn">GitHub</a>
+            <a href="#" class="demo-btn">Live Demo</a>
+        </div>
+
+    </div>
+
+</div>
         </div>
 
     </div>
 
 </section>
-<section id="github" class="github">
+<section id="github" class="github" data-aos="fade-up">
 
     <div class="section-title">
-        <h4>Open Source</h4>
-        <h2>GitHub Profile</h2>
-        <p>Explore my code, projects and contributions.</p>
+        <h4>GitHub</h4>
+        <h2>Developer Profile</h2>
+        <p>Live data fetched directly from GitHub.</p>
     </div>
 
     <div class="github-card">
 
-        <img src="assets/images/profile.jpg" alt="Ben">
+        <img id="github-avatar" src="" alt="GitHub Avatar">
 
         <div class="github-info">
 
-            <h2>Ben Githua Ng'ang'a</h2>
+            <h2 id="github-name"></h2>
 
-            <p>
-                Software Engineer passionate about building scalable
-                software, data-driven applications and modern web solutions.
-            </p>
+            <p id="github-bio"></p>
+
+            <div class="github-stats">
+
+                <div class="stat">
+                    <h3 id="repos">0</h3>
+                    <span>Repositories</span>
+                </div>
+
+                <div class="stat">
+                    <h3 id="followers">0</h3>
+                    <span>Followers</span>
+                </div>
+
+                <div class="stat">
+                    <h3 id="following">0</h3>
+                    <span>Following</span>
+                </div>
+
+            </div>
+
+            <br>
 
             <div class="github-buttons">
 
-                <a href="https://github.com/BenNganga" target="_blank" class="github-btn">
-                    Visit GitHub
-                </a>
-
+                <a id="github-link" class="github-btn" target="_blank">
+                      Visit GitHub
+                   </a>
                 <a href="https://www.linkedin.com/in/ben-ng-ang-a-473568224" target="_blank" class="linkedin-btn">
                     LinkedIn
                 </a>
@@ -302,7 +452,7 @@ Download CV
     </div>
 
 </section>
-<section id="experience" class="experience">
+<section id="experience" class="experience" data-aos="fade-right">
 
     <div class="section-title">
         <h4>Career Journey</h4>
@@ -345,7 +495,7 @@ Download CV
     </div>
 
 </section>
-<section id="volunteer" class="experience">
+<section id="volunteer" class="experience" data-aos="fade-left">
 
     <div class="section-title">
         <h4>Giving Back</h4>
@@ -380,7 +530,7 @@ Download CV
     </div>
 
 </section>
-<section id="education" class="education">
+<section id="education" class="education" data-aos="zoom-in-up">
 
     <div class="section-title">
         <h4>Education</h4>
@@ -410,7 +560,7 @@ Download CV
     </div>
 
 </section>
-<section id="certifications" class="certifications">
+<section id="certifications" class="certifications" data-aos="fade-up">
 
     <div class="section-title">
         <h4>Achievements</h4>
@@ -447,7 +597,7 @@ Download CV
     </div>
 
 </section>
-<section id="contact" class="contact">
+<section id="contact" class="contact" data-aos="flip-up">
 
     <div class="section-title">
         <h4>Get In Touch</h4>
@@ -504,6 +654,17 @@ Download CV
 
 </section>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/github.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:1000,
+    once:true,
+    offset:100
+});
+</script>
 <footer>
 
 <p>
